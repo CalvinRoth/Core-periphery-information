@@ -37,9 +37,9 @@ class RationalF:
         t = ""
         b = ""
         for i,c in enumerate(self.top):
-            t =  t +  str(c) + "x^" + i + " "
+            t =  t +  str(c) + "x^" + str(i) + " "
         t = t[0:-2]
-        for j in enumerate(self.bottom):
-            b += b + str(c) + "x^" + j + " "
+        for j,c in enumerate(self.bottom):
+            b += b + str(c) + "x^" + str(j) + " "
         t = t[0:-2]
         return t + "/" + b  
